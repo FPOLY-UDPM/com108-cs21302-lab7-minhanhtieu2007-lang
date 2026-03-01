@@ -1,7 +1,7 @@
 /******************************************************************************
- * Họ và tên: [ĐIỀN TÊN TẠI ĐÂY]
- * MSSV:      [ĐIỀN MSSV TẠI ĐÂY]
- * Lớp:       [ĐIỀN LỚP TẠI ĐÂY]
+ * Họ và tên: Tiêu Anh Minh
+ * MSSV:      PS48358
+ * Lớp:       CS21301
  *****************************************************************************/
 
 //  BÀI 1: XÂY DỰNG CHƯƠNG TRÌNH ĐẾM NGUYÊN ÂM VÀ PHỤ ÂM CỦA 1 CHUỖI 
@@ -11,4 +11,28 @@
 
 
 // VIẾT CODE Ở ĐÂY
+#include<stdio.h>
+#include<string.h>
+int main() {
+    char uiia[100];
+    printf("hay nhap chuoi ki tu: ");
+    fgets(uiia,sizeof(uiia),stdin);
+    printf("chui ban vua nhap: %s",uiia);
 
+    int p=0;
+    int n=0;
+
+    for(int i=0;uiia[i]!='\0';i++){
+        if (uiia[i]=='a'||uiia[i]=='i'||uiia[i]=='u'||uiia[i]=='e'||uiia[i]=='o')
+            {
+            n++;
+            }
+            else
+            {
+            p++;
+            }
+    }
+    printf("so nguyen am la: %d\n",n);
+    printf("so phu am la: %d",p);
+    return 0;
+}
